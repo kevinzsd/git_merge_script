@@ -1,6 +1,6 @@
 # create by Shida Zhong
 # python script for merging branch to master and then push it to remote repository in GitHub
-# please make sure the change in branch is committed
+# please make sure the change in branch is committed and pushed
 # usage: python git_merge.py -m "message for merging" -n branch_name
 
 import os
@@ -18,5 +18,3 @@ os.system("git checkout master")
 os.system("git pull origin master")
 os.system(merge_comm)
 os.system("git push -u origin master")
-
-print merge_comm
